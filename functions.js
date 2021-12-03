@@ -2,7 +2,7 @@
  Write a function called "area" which receives 2 parameters (l1, l2) and calculates the area of the associated rectangle.
 */
 
-const area = function(l1, l2) {
+area = function(l1, l2) {
     let result = (l1 * l2)
     return result
 }
@@ -14,14 +14,26 @@ console.log(output)
  It should return the sum of those two values, but if the two values are the same then it should return their sum multiplied by 3.
 */
 
-/* WRITE YOUR ANSWER HERE */
+crazySum = function(x, y) {
+    let result = x === y ? 3*(x + y) : x + y
+    return result
+}
+output = crazySum(2, 3)
+console.log(output)
 
 /* EXERCISE 3
  Write a function called "crazyDiff" that computes the absolute difference between a given number and 19.
  It should return triple their absolute difference if the given number is greater than 19.
 */
 
-/* WRITE YOUR ANSWER HERE */
+crazyDiff = function(x, y) {
+    x = 19
+    let a = (y - 19)
+    let result = y > 19 ? a*a*a : "invalid" 
+    return result
+}
+output = crazyDiff(19, 2)
+console.log(output)
 
 /* EXERCISE 4
  Write a function called "boundary" which accept an integer parameter n and returns true if n is within 20 and 100 (included) or if n it's equal to 400.
