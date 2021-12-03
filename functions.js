@@ -39,7 +39,23 @@ console.log(output)
  Write a function called "boundary" which accept an integer parameter n and returns true if n is within 20 and 100 (included) or if n it's equal to 400.
 */
 
-/* WRITE YOUR ANSWER HERE */
+boundary = function (n) {
+    if (n > 20) {
+        return true
+    } 
+    else if (n < 100){
+        return true
+    } 
+    else if (n === 400){
+        return true
+    } 
+    else {
+        return false
+    }
+}
+output = boundary(420)
+console.log(output)
+
 
 /* EXERCISE 5
  Write a function called "strivify" which accepts a string as a parameter.
